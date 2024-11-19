@@ -1,0 +1,14 @@
+{
+  "name": "expense-tracker",
+  "version": "1.0.0",
+  "description": "Expense Tracker CLI",
+  "main": "exptrack.js",
+  "scripts": {
+    "test": "node exptrack.js"
+  },
+  "author": "brober",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^12.1.0"
+  }
+}
