@@ -1,0 +1,17 @@
+<form class="converter_form" onsubmit="converter(event, 'temp')">
+    <label for="unit" class="form_label">Enter the length to convert</label>
+    <input type="number" name="value" id="converter_value" required value="0">
+    <label for="unit_from" class="form_label">Unit to convert from</label>
+    <select name="unit_from" id="unit_from">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+    </select>
+    <label for="unit_to" class="form_label">Unit to convert to</label>
+    <select name="unit_to" id="unit_to">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+    </select>
+    <input type="submit" value="Convert" class="form_btn">
+</form>

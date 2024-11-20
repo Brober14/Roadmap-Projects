@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Unit Converter</title>
+</head>
+<body>
+    <div class="converter_main">
+        <h1 class="converter_title">Unit Converter</h1>
+        <nav class="converter_types">
+            <button class="converter_type-btn" onclick="loadForm('length.html')" type="button">Length</button>
+            <button class="converter_type-btn" onclick="loadForm('weight.html')" type="button">Weight</button>
+            <button class="converter_type-btn" onclick="loadForm('temp.html')" type="button">Temperature</button>
+        </nav>
+        <div class="form_block" id="form_block">
+            
+        </div>
+        <div class="result_block" id="result_block">
+            <p class="result_title">Result of your conversion</p>
+            <h3 id="result_data"></h3>
+            <input type="reset" onclick="resetView()" value="Reset" class="form_btn">
+        </div>
+    </div>
+</body>
+</html>
