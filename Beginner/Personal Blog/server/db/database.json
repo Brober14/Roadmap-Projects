@@ -1,0 +1,49 @@
+{
+    "articles": [
+        {
+            "id": "26466596-102e-4234-95c8-4a6879409d57",
+            "author": "root",
+            "title": "Edited Title",
+            "content": "Edited Content",
+            "edited": true,
+            "createdAt": "20/12/2024, 12:51:22",
+            "editedAt": "20/12/2024, 13:00:15"
+        },
+        {
+            "id": "c1022836-0cea-408a-8531-5cec1ad0c446",
+            "author": "root",
+            "title": "Post",
+            "content": "created on website\n",
+            "edited": false,
+            "createdAt": "01/01/2025, 16:10:15",
+            "editedAt": "01/01/2025, 16:10:15"
+        },
+        {
+            "id": "d4234f03-330f-4ff6-a255-e6fc8a5b5ec4",
+            "author": "root",
+            "title": "Some Post",
+            "content": "I created this post through the website\n",
+            "edited": false,
+            "createdAt": "01/01/2025, 16:33:09",
+            "editedAt": "01/01/2025, 16:33:09"
+        },
+        {
+            "id": "83ab59ff-52b2-4bdc-98ac-f57c1379936e",
+            "author": "root",
+            "title": "Another Post",
+            "content": "Upadted Information",
+            "edited": true,
+            "createdAt": "01/01/2025, 16:34:20",
+            "editedAt": "01/01/2025, 16:35:11"
+        },
+        {
+            "id": "1e71a953-c4cd-4a6a-a8cb-842de0c8a42c",
+            "author": "root",
+            "title": "asd",
+            "content": "Some ",
+            "edited": false,
+            "createdAt": "01/01/2025, 16:34:59",
+            "editedAt": "01/01/2025, 16:34:59"
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Blog</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/main.js" defer></script> 
+</head>
+<body>
+    <header class="header">
+        <h1 class="header_title">Personal Blog</h1>
+        <button type="button" onclick="toggleLoginWindow()" class="log-in_btn" id="login_btn">Login</button>
+    </header>
+    <main class="main">
+        <div class="login_window hidden" id="loginWindow">
+            <div class="login_window_content">
+                <h1 class="loginWindow-title">Login as admin</h1>
+                <form action="/login" method="post">
+                    <label for="pass" class="passwordInputLabel">Please Enter Password:</label>
+                    <input type="password" name="pass" id="loginPass">
+                    <button type="submit" class="loginBtn">Login</button>
+                </form>
+            </div>
+        </div>
+        <div class="article_info_window hidden"></div>
+        <div class="filters_box">
+            <p>Some filters</p>
+        </div>
+        <div class="articles_box" id="articles">
+            <div class="article_card">
+                <div class="card_title">
+                    <h3 class="card_title_text">Title</h3>
+                </div>
+                <div class="card_body">
+                    <p class="card_body_text">Some Text</p>
+                </div>
+                <div class="card_modification_btns">
+                    <button type="button" class="card_button" id="edit_btn">Edit</button>
+                    <button type="button" class="card_button" id="delete_btn">Delete</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body> 
+</html>

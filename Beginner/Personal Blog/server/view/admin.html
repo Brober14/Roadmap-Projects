@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/admin.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header_title">Personal Blog Admin</h1>
+        <button type="button" class="log-in_btn" onclick="logout()" id="logout_btn">Logout</button>
+        <div class="create_button_box">
+            <button type="button" class="create_btn" id="create_btn" onclick="toggleCreateWindow()">Create Post</button>
+        </div>
+    </header>
+    <main class="main">
+        <div class="article_info_window hidden"></div>
+        <div class="article_form_window hidden" id="article_form_window">
+            <form action="/createPost" method="POST" class="article_form" id="article_form">
+                <label for="id" class="createFormLabel">Article ID</label>
+                <input type="text" class="formInput" id="article_id" readonly>
+                <label for="title" class="createFormLabel">Title</label>
+                <input type="text" class="formLabel" id="article_title" placeholder="Title of an Article" required>
+                <label for="content" class="createFormLabel">Content</label>
+                <textarea type="text" class="formInput" id="article_content" placeholder="Content of your Article" required></textarea>
+                <button type="submit" class="submitBtn">Submit</button>
+            </form>
+        </div>
+        <div class="filters_box">
+            <p>Some filters</p>
+        </div>
+        <div class="articles_box" id="articles">
+            <div class="article_card">
+                <div class="card_title">
+                    <h3 class="card_title_text">Title</h3>
+                </div>
+                <div class="card_body">
+                    <p class="card_body_text">Some Text</p>
+                </div>
+                <div class="card_modification_btns">
+                    <button type="button" class="card_button" id="edit_btn">Edit</button>
+                    <button type="button" class="card_button" id="delete_btn">Delete</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body> 
+</html>
